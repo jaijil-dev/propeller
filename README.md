@@ -31,7 +31,7 @@ cp .env.dist .env
 Add API_BASE_URL and API_TOKEN
 
 3. **Install Dependencies**
-``bash
+```bash
 composer install
 ```
 
