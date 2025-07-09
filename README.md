@@ -18,8 +18,8 @@ A modern web application built with Symfony 7.3
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/jaijil-dev/propeller.git
+cd propeller
 ```
 2. **Create environment file**
 
