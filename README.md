@@ -1,6 +1,6 @@
-# Propeller API Client
+# Symfony 7.3 Project
 
-A Symfony 7 application that connects to the Propeller CRM API for managing marketing inquiries and subscribers.
+A modern web application built with Symfony 7.3
 
 ---
 
@@ -8,8 +8,8 @@ A Symfony 7 application that connects to the Propeller CRM API for managing mark
 
 - PHP >= 8.2
 - Composer
-- Symfony CLI (optional but recommended)
-- A web server (e.g., Nginx or Apache)
+- Symfony CLI (optional, recommended)
+- Database (MySQL, PostgreSQL, SQLite, etc.)
 
 ---
 
@@ -18,24 +18,57 @@ A Symfony 7 application that connects to the Propeller CRM API for managing mark
 1. **Clone the repository**
 
 ```bash
-git clone git@github.com:jaijil-dev/propeller-api-client.git
-cd propeller-api-client
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
+2. **Create environment file**
 
-2. **Set up environment**
-
-Copy the `.env` file and configure your environment:
+Copy the sample file and adjust it:
 
 ```bash
-cp .env.dist .env
+cp .env.dev .env
 ```
-Add API_BASE_URL and API_TOKEN
 
-3. **Install Dependencies**
+Edit `.env` or `.env.local` to add API_BASE_URL(api domain name) and API_TOKEN (Bearer Token)
+
+2. **Install dependencies**
+
 ```bash
 composer install
 ```
 
+5. **Start the server**
 
+Using Symfony CLI:
 
+```bash
+symfony server:start
+```
 
+Or PHP built-in server:
 
+```bash
+php -S 127.0.0.1:8000 -t public
+```
+
+---
+
+## Usage
+
+Access your project at:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+##  Working
+
+After setting up project use the js code in /api-client.js to run directly in browser
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
